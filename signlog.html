@@ -63,37 +63,59 @@
 
 			<div class="container">
 				
-				<div class="home-title">
-					<h2>Features</h2>
-				</div>
+				<form id="reg_form" class="reg_form" method="post" action="">
 
-				
-				<div class="photobanner">
+					<h3>New to MoneyMojo? Register here...</h3>
 
-					<img src="">
-					
+			        <div class="field">
+			            <label for="name">Username:</label>
+			            <input name="name" id="name" type="text" placeholder="Choose Username...">
+			        </div>
+			        
+			        <div class="field">
+			            <label for="email">Email:</label>
+			            <input name="email" id="email" type="email" placeholder="Enter email address">
+			    
+			        </div>
 
-				</div><!-- photobanner div -->
+			        <div class="field">
+			            <label for="password">Password:</label>
+			            <input name="password" id="password" placeholder="Choose Password..."></input>
+			        </div>
 
-				<div class="imageshadow">
-					
-					<img src="">
+			        <div class="field">
+			            <label for="captcha">* What is 2 + 2 ?(Anti-spam)</label>
+			            <input name="antispam" id="captcha" type="text" placeholder="Type Here">
+			        </div>
 
-				</div><!-- imageshadow div -->
+			        <input type="submit" name="submit" class="button" value="Register">
 
-				<div class="clear"></div>
+			    </form>
 
-				<div id="blurb">
+				<form id="login_form" class="login_form" method="post" action="">
 
-					<p></p>
+					<h3>Already joined up? Login here...</h3>
 
-					<img src="">
-					
-					<div class="clear"></div>
+			        <div class="field">
+			            <label for="name">Username:</label>
+			            <input name="name" id="name" type="text" placeholder="Choose Username...">
+			        </div>
+			        
+			     
+			        <div class="field">
+			            <label for="password">Password:</label>
+			            <input name="password" id="password" placeholder="Choose Password..."></input>
+			        </div>
 
-				</div><!-- blurb div -->
+			        <div class="field">
+			            <label for="captcha">* What is 2 + 2 ?(Anti-spam)</label>
+			            <input name="antispam" id="captcha" type="text" placeholder="Type Here">
+			        </div>
 
-				
+			        <input type="submit" name="submit" class="button" value="Login">
+
+			    </form>
+			<div class="clear"></div>
 
 				<footer class="clearfix">
 					
