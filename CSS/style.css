@@ -228,8 +228,16 @@ width:100%;
 
 #social-media li {
 
-  float:right;
+  /*float:right;*/
+  background-image: url('../images/supermassivecsspriteicons2.png');
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 33px;
+  float: right;
   
+
 }
 
 
@@ -237,7 +245,8 @@ width:100%;
   width: 32px;
   height:33px;
   display: block;
- padding:0 2px;
+  padding:0 2px;
+  float: right;
   
 
   
@@ -249,17 +258,17 @@ width:100%;
 
 
 .linkedin {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
   background-position: 0px -292px;
+  
 
   }
 
   .linkedin:hover {
-  background-position: -38px -292px;
+    background-position: -38px -292px;
   }
 
 .twitter {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
+
   background-position: -0px -109px;
   }
 
@@ -269,7 +278,7 @@ width:100%;
 
 .facebook {
 
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
+
   background-position:0px -73px;
   }
 
@@ -279,7 +288,6 @@ width:100%;
   }
 
 .rss {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
   background-position:0px -511px;
   }
 
@@ -290,7 +298,6 @@ width:100%;
   }
 
 .google {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
   background-position:0px -694px;
   }
 
@@ -301,7 +308,6 @@ width:100%;
   }
 
 .pinterest {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
   background-position:0px -1053px;
   }
 
@@ -312,7 +318,6 @@ width:100%;
   }
 
 .youtube {
-  background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
   background-position:0px -219px;
   }
 
@@ -323,7 +328,6 @@ width:100%;
   }
 
 .email {
-background: url('../images/supermassivecsspriteicons2.png') no-repeat 0 0;
 background-position:0px -1623px;
 }
 
