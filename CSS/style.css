@@ -59,7 +59,7 @@ width: 137px;
 height: 137px;
 background: url('../images/mojologo.svg');
 background-size: cover;
-margin: 20px 15px;
+margin: 20px 75px 20px 15px;
 
 }
 
@@ -94,7 +94,7 @@ ul {
 }
 
 nav li {
-  
+  position:relative;
   font-size: 20px;
   float:left;
   margin: 0px;
@@ -121,12 +121,26 @@ nav li {
 
   }
 
-  nav li:last-child a{
+
+
+  .submenu {
+
+    margin-top:50px;
+    position: absolute;
+
+  /*  display:none;*/
+ 
+  }
+
+
+
+  /*nav li:last-child a{
 
     margin-left: 100px;
     border-radius: 10px;
   
   }
+*/
 
 
 
@@ -177,6 +191,7 @@ body {
 
   width:800px;
   margin:0px auto;
+
 }
 
 header {
@@ -188,12 +203,12 @@ header {
  z-index: 9999;
  top: 0px;
  width: 100%;
-background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.29) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.29))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.29) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.29) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.29) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.29) 100%); /* W3C */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.40) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.40))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.40) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.40) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.40) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.40) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4a000000',GradientType=0 ); /* IE6-9 */
 
 
@@ -388,6 +403,14 @@ background-position:0px -1623px;
 .button:hover {
 
   color: #ffffff;
+}
+
+.narrow {
+
+  height:20px;
+  line-height: 0px;
+  font-size: 10px;
+  margin:1px 0;
 }
 
 form .button{

@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+		<script type="text/javascript" src="js/captcha.js"></script>
 	</head>
 	<body>
 		
@@ -63,37 +65,43 @@
 
 			<div class="container">
 				
-				<div class="home-title">
-					<h2>F</h2>
-				</div>
+				<form id="reg_form" class="reg_form" method="post" action="">
+
+					<h3>New to MoneyMojo? Register here...</h3>
+
+			        <div class="field">
+			            <label for="name">Username:</label>
+			            <input name="name" id="name" type="text" placeholder="Choose Username...">
+			        </div>
+			        
+			        <div class="field">
+			            <label for="email">Email:</label>
+			            <input name="email" id="email" type="email" placeholder="Enter email address">
+			    
+			        </div>
+
+			        <div class="field">
+			            <label for="password">Password:</label>
+			            <input name="password" id="password" placeholder="Choose Password..."></input>
+			        </div>
+
+			        <div class="field">
+			            <label for="captcha">* What is 2 + 2 ?(Anti-spam)</label>
+			            <input name="antispam" id="captcha" type="text" placeholder="Type Here">
+			        </div>
+
+			        
+
+			        <div id="recaptcha_div"></div>
+
+      				<input type="button" value="Show reCAPTCHA" onclick="showRecaptcha('recaptcha_div');"></input>
+
+					<input type="submit" name="submit" class="button" value="Register">
+			    
+			    </form>
 
 				
-				<div class="photobanner">
-
-					<img src="">
-					
-
-				</div><!-- photobanner div -->
-
-				<div class="imageshadow">
-					
-					<img src="">
-
-				</div><!-- imageshadow div -->
-
-				<div class="clear"></div>
-
-				<div id="blurb">
-
-					<p></p>
-
-					<img src="">
-					
-					<div class="clear"></div>
-
-				</div><!-- blurb div -->
-
-				
+			<div class="clear"></div>
 
 				<footer class="clearfix">
 					
