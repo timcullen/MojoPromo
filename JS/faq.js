@@ -1,21 +1,17 @@
 
-
-
-
-function dd(){
-
-
-
+function showanswer() {
+	$(this)
+		.next()
+			.fadeIn(600)
+			.siblings('dd')
+				.slideUp(300);	
 }
 
 
 $(function(){
 
-var dd=$('dd');
-dd.filter(':nth-child(n+4)').addClass('hide');
-
-
-
+$('dd').filter(':nth-child(n+4)').addClass('hide');
+$('dl').on('mouseenter','dt', showanswer);
 
 });
 
