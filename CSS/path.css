@@ -25,7 +25,7 @@ p {
 /* The toggle */
 label[for="shownav"], .menu, input#shownav {
     position: absolute;
-    top: 25%;
+    top: 37%;
     right: 5%;
     padding: 0;
     margin: 0;             
@@ -69,14 +69,11 @@ label[for="shownav"] {
     cursor: pointer; 
     pointer-events: none;     
                 
-    background-color: #6495ED;
 
-
-    background-image: -webkit-gradient(radial, 50% 100%,100,50% -50%,100, from(rgb(207, 41, 21)), to(rgb(231, 96, 64)));
-    background-image: -webkit-radial-gradient(50% 0%, rgb(231, 96, 64), rgb(207, 41, 21));
-    background-image: -moz-radial-gradient(50% 0%, rgb(231, 96, 64), rgb(207, 41, 21));
-    background-image: -ms-radial-gradient(50% 0%, rgb(231, 96, 64), rgb(207, 41, 21));
-    background-image: radial-gradient(50% 0%, rgb(231, 96, 64), rgb(207, 41, 21));            
+    background: linear-gradient(top, #ACACAC 0%, #363636 100%);  
+    background: -moz-linear-gradient(top, #ACACAC 0%, #363636 100%); 
+    background: -webkit-linear-gradient(top, #ACACAC 0%, #363636 100%); 
+       
 }
 label[for="shownav"]:before {
     content: "Share";
@@ -88,7 +85,7 @@ label[for="shownav"]:before {
     width: 100%;
     pointer-events: none;
     font-size: 9px;
-    font-family: "Courier", "Courier New", monospace;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     text-align: center;
     font-weight: bold;
