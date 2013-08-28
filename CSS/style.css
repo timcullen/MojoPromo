@@ -348,6 +348,11 @@ dd:nth-last-child(2) {border-bottom: none;}
 display:none;
 }
 
+.video {
+
+  padding-top: 20px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -635,7 +640,8 @@ width:40%;
 }
 
 #blurb  {
-background:url("../images/bg_blurb.jpg");
+width:56%;
+margin:0 auto;
 border-top: 1px solid #000000;
 border-right: 1px solid #ffffff;
 border-bottom: 1px solid #ffffff;
