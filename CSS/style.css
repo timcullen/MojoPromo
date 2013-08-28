@@ -352,6 +352,42 @@ display:none;
 /* ADDITIONAL STYLES
 /*******************************************/
 
+
+/* ==========================================================================
+   Flexslider
+   ========================================================================== */
+
+.flexslider {
+
+    background:url('../images/bg_b.png') no-repeat 0 0;
+    border-radius: 0;
+    border: none;
+    margin:0 auto 50px;
+    height: 500px;
+    width:960px;
+}
+
+.flexslider li{
+    color:white;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.flexslider li h2{
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.flexslider .slides img{
+    width:90%;
+
+}
+
+
+
+
+
 /******************************************
 /* SOCIAL MEDIA
 /*******************************************/
@@ -547,7 +583,7 @@ form .button{
 .photobanner,
 .imageshadow
 {
-  width:51%;
+  width:45%;
   float: right;
 
 }
