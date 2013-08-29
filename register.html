@@ -14,8 +14,7 @@
 		<link rel="stylesheet" href="css/path.css">
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-		<script type="text/javascript" src="js/captcha.js"></script>
+
 	</head>
 	<body>
 		
@@ -105,33 +104,29 @@
 
 			<div class="container">
 				
-				<form id="reg_form" class="reg_form" method="post" action="#">
-
-					<h3>New to MoneyMojo? Register here...</h3>
-
-			        <div class="field">
-			            <label for="name">Username:</label>
-			            <input name="name" id="name" type="text" placeholder="Choose Username...">
-			        </div>
-			        
-			        <div class="field">
-			            <label for="email">Email:</label>
-			            <input name="email" id="email" type="email" placeholder="Enter email address">
-			    
-			        </div>
-
-			        <div class="field">
-			            <label for="password">Password:</label>
-			            <input name="password" id="password" placeholder="Choose Password..."></input>
-			        </div>
-
-			        <div id="recaptcha_div"></div>
-
-      				<input type="button" value="Show reCAPTCHA" onclick="showRecaptcha('recaptcha_div');"></input>
-
-					<input type="submit" name="submit" class="button" value="Register">
-			    
-			    </form>
+				<form id="add_user_data" action="#" method="post">
+					<label for="user_name">Name:</label>
+					<input type="text" id="user_name" name="user_name" placeholder="Your name"/>
+					<span id="user_name_error">Name must be more than 3 characters!</span>
+					<br>
+					<label for="user_login">Login Name:</label>
+					<input type="text" id="user_login" name="user_login" placeholder="Choose login name"/>
+					<span id="user_login_error">Alphanumeric keys only. No spaces</span>
+					<br>
+					<label for="user_pw">Password:</label>
+					<input type="text" id="user_pw" name="user_pw" placeholder="Choose password">
+					<span id="user_pw_error">Password must be 8 characters long and include at least one Capital letter and one number</span>
+					<br>
+					<label for="user_pwchk">Re-enter password:</label>
+					<input type="text" id="user_pwchk" name="user_pwchk" placeholder="Re-enter password">
+					<span id="user_pwchk_error">Passwords must match</span>
+					<br>
+					<label for="user_email">Email:</label>
+					<input type="email" id="user_email" name="user_email" placeholder="Enter email address">
+					<span id="user_email_error">Email must be valid!</span>
+					<br>
+					<input type="submit" value="Register">
+				</form><!-- #add_user_data -->
 
 				
 			<div class="clear"></div>
@@ -164,5 +159,8 @@
 			</div><!-- container div -->
 
 		</div><!-- wrapper div -->
+		<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+		<script type="text/javascript" src="js/captcha.js"></script>
+		<script src="js/userdata.js"></script>
 	</body>
 </html>

@@ -1,10 +1,10 @@
 $(document).ready(function(){
-
+	
 	//CREATE OBJECT (using Literal Notation)
 	var user = {
 		name: '',
-		age: '',
-		phone: '',
+		login: '',
+		password: '',
 		email: ''
 
 	};
@@ -12,40 +12,27 @@ $(document).ready(function(){
 	//DOM SEL VARS
 	
 	var userNameInput = $("#user_name");
-	var userAgeInput = $("#user_age");
-	var userPhoneInput = $("#user_ph");
+	var userLoginInput = $("#user_login");
+	var userPasswordInput = $("#user_pw");
+	var userPasswordCheckInput = $("#user_pwchk");
 	var userEmailInput = $("#user_email");
 
 	var userNameError = $("#user_name_error");
-	var userAgeError = $("#user_age_error");
-	var userPhoneError = $("#user_ph_error");
+	var userLoginError = $("#user_login_error");
+	var userPasswordError = $("#user_pw_error");
+	var userPasswordCheckError = $("#user_pwchk_error");
 	var userEmailError = $("#user_email_error");
 
 	var addUserDataForm = $("#add_user_data");
-	var displayData = $("#display_data");
+	
 	
 	//INITIALLY HIDE ERRORS	
 
 	$("span").hide();
-
-	//DISPLAY LIST FUNCTION
-
-	function display() {
-
-		displayData.html('');
-		$.each(user,function(prop,value) {
-
-			displayData.append('<li>' + prop + ': ' + value + '</li>');
-
-		}); 
-
-
-		}
-
-
+	
 
 	
-	
+		
 	
 	//ADD_USER FORM SUBMIT EVENT FUNCTION
 	
@@ -53,15 +40,15 @@ addUserDataForm.submit(function(evt) {
 
 	evt.preventDefault();
 	var userNameVal =  userNameInput.val();
-	var userAgeVal = userAgeInput.val();
-	var userPhoneVal = userPhoneInput.val();
+	var userLoginVal = userLoginInput.val();
+	var userPasswordVal = userPasswordInput.val();
 	var userEmailVal = userEmailInput.val();
 
 
 function validateName () {
 
 
-if (userNameVal.length < 3) {
+if (userNameVal.length < 5) {
 
 	userNameError.show();
 	return false;
@@ -71,33 +58,48 @@ else {userNameError.hide();
 }
 }
 
-function validateAge () {
+function validateLogin () {
 
 
-if (userAgeVal == '' || isNaN(userAgeVal) ) {
+if (userLoginVal.length < 5)  {
 
-	userAgeError.show();
+	userLoginError.show();
+
 	return false;
 }
-else {userAgeError.hide();
+else {userLoginError.hide();
 	return true;
 }
 }
 
 
-function validatePhone () {
+function validatePassword () {
 
-var p = /^[0-9]+[0-9]+[0-9]+[_.-]+[0-9]+[0-9]+[0-9]+[_.-]+[0-9]+[0-9]+[0-9]+[0-9]$/;
+var p = /^[-a-z0-9~!$%^&*_=+}]$/;
 
-if (p.test(userPhoneVal) ) {
+if (p.test(userPasswordVal) ) {
 
-	userPhoneError.hide();
+	userPasswordError.hide();
 	return true;
 }
-else {userPhoneError.show();
+else {userPasswordError.show();
 	return false;
 }
 }
+
+function validatePasswordCheck () {
+
+
+if (userPasswordVal=userPasswordCheckVal)  {
+
+	userPasswordCheckError.hide();
+	return true;
+}
+else {userPasswordCheckError.show();
+	return false;
+}
+}
+
 
 function validateEmail () {
 
@@ -115,11 +117,11 @@ function validateEmail () {
 }
 
 
-if ( validateName() & validateAge() & validatePhone() & validateEmail() ) {
+if ( validateName() & validateLogin() & validatePassword() & validatePasswordCheck() & validateEmail() ) {
 
 	user.name = userNameVal;
-	user.age = userAgeVal;
-	user.phone = userPhoneVal;
+	user.login = userLoginVal;
+	user.password = userPasswordVal;
 	user.email = userEmailVal;
 	display();
 }
@@ -133,20 +135,6 @@ if ( validateName() & validateAge() & validatePhone() & validateEmail() ) {
 
 	///^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/
 	
-	//CLEAR BUTTON FUNCTION
 	
-
-	$("#clear").click(function(){
-
-			user.name = '';
-			user.age = '';
-			user.phone = '';
-			user.email = '';
-			display();
-
-
-
-
-	});
 		
 });

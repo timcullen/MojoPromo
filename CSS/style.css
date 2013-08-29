@@ -637,30 +637,6 @@ padding-bottom: 20px;
   margin-top: 15px;
 }
 
-/*#home-boxes  {
-
-
-}
-
-.home-box  {
-  float:left;
-  width:290px;
-  margin-right: 30px;
-}
-
-.home-box img {
-  margin: 5px;
-  border: 1px solid #ffffff;
-  outline:6px solid grey;
-}
-
-.home-box.last {
-
-  margin-right:0px;
-  
-} 
-*/
-
 
 .features {
     width: 100%;
@@ -751,7 +727,7 @@ textarea {
     border-radius: 5px;
     width: 100%;
     margin:  10px 0;
-    height:50px;
+    height:40px;
     border: 1px solid darkgrey;
     -webkit-box-shadow: 20px 23px 42px -18px rgba(0,0,0,0.7);
 -moz-box-shadow: 20px 23px 42px -18px rgba(0,0,0,0.7);
@@ -762,11 +738,11 @@ box-shadow: 20px 23px 42px -18px rgba(0,0,0,0.7);
 
 form {
     margin:0 auto;
-    width: 40%;
+    width: 30%;
+   }
 
-    max-width: 500px;
-
-
+span {
+  color:#f00;
 }
 
 textarea {
