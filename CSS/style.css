@@ -1,7 +1,8 @@
   /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: MoneyMojo Promotional Site
+Client: MoneyMojo Software Partnership  
+Author: Tim Cullen
+Date:   August 2013
 */
 
 
@@ -54,12 +55,12 @@ overflow: hidden;
 }
 
 .logo {
-float: left;  
+
 width: 137px;
 height: 137px;
 background: url('../images/mojologo.svg');
-background-size: cover;
-margin: 20px 40px 20px 15px;
+background-size: 137px 137px;
+margin: 20px auto;
 
 }
 
@@ -73,22 +74,23 @@ ul {
 }
 
 nav {
-  float:left;
-  margin-top: 50px;
+/*  float:left; */
+  margin: -50px auto;
   height:75px;
+  line-height: 0.2em;
+  width: 430px;
 }
 
   nav ul {
 
-    padding:0;
-    margin-left: 62px;
+
+
     background: #efefef; 
     background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
     background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
     background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
     box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-    padding: 0 20px;
-    border-radius: 10px;  
+    padding: 0px;
     list-style: none;
     position: relative;
     display: inline-table;
@@ -187,9 +189,11 @@ nav ul ul {
   border-radius: 0px; padding: 0;
   position: absolute; top: 100%;
   width:100%;
+
 }
   nav ul ul li {
     float: none; 
+    line-height: 0.7em;
     border-top: 1px solid #6b727c;
     border-bottom: 1px solid #575f6a;
     position: relative;
@@ -204,30 +208,7 @@ nav ul ul {
         background: #4b545f;
       }
 
-  /*.submenu {
-
-    margin-top:50px;
-    position: absolute;
-
-    display:none;
- 
-  }
-
-  .show {
-
-    display:block;
-  }*/
-
-
-
-  /*nav li:last-child a{
-
-    margin-left: 100px;
-    border-radius: 10px;
   
-  }
-*/
-
 
 
 
@@ -260,18 +241,18 @@ body {
   height:180px;
 
 }
-/*
-.fixed {
-  width: 100%;
-  position:fixed;
-}
-*/
+
 .container {
 	width: 960px;
 	margin: 0 auto;
   background:#e8e8e8;
-
+  width:96%;
  
+}
+
+header .container {
+  background:none;
+/*  width:100%;*/
 }
 
 .centre {
@@ -368,19 +349,26 @@ display:none;
     border-radius: 0;
     border: none;
     margin:0 auto 50px;
-    height: 500px;
-    width:960px;
+    height: 300px;
+    max-width:960px;
 }
 
 .flexslider li{
     color:white;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0 0 0;
 
 }
+
+.flexslider .home-title {
+  width:40%;
+}
+
 .flexslider li h2{
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 0px;
 
 }
 
@@ -564,14 +552,6 @@ background-position:0px -1623px;
   color: #ffffff;
 }
 
-/*.narrow {
-
-  height:20px;
-  line-height: 0px;
-  font-size: 10px;
-  margin:1px 0;
-}
-*/
 
 
 form .button{
@@ -582,12 +562,7 @@ form .button{
 
 .photobanner {
 
-  margin:120px 0 0 0;
-}
-
-.photobanner,
-.imageshadow
-{
+  margin:100px 0 0 0;
   width:45%;
   float: right;
 
@@ -597,11 +572,8 @@ form .button{
 .imageshadow img
 {
 
-
- 
   width:100%;
   background-size: cover;
-
 }
 
 
@@ -620,24 +592,25 @@ h2 {
 padding:10px 0 0 100px;
 font-family: lucida;
 font-size: 45px;
-
-
-
 }
 
 h3 {
   font-size: 20px;
 }
 
-.home-title {
-
-padding:20px;
-float:left;
-width:40%;
-
-
+img {
+    max-width: 100%;
 
 }
+
+.home-title {
+
+padding:3px;
+float:left;
+width:100%;
+
+}
+
 
 #blurb  {
 width:56%;
@@ -651,10 +624,10 @@ padding-bottom: 20px;
 
 }
 
-#blurb p {
+#blurb p, h3 {
 
   
-  width:700px;
+  width:100%;
   padding:10px;
 }
 
@@ -664,7 +637,7 @@ padding-bottom: 20px;
   margin-top: 15px;
 }
 
-#home-boxes  {
+/*#home-boxes  {
 
 
 }
@@ -686,7 +659,64 @@ padding-bottom: 20px;
   margin-right:0px;
   
 } 
+*/
 
+
+.features {
+    width: 100%;
+    overflow: hidden;
+  }
+    .features li {
+      width: 100%;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+      .features li a {
+        text-decoration: none;
+        color: #232323;
+      }
+        .features li a:hover {
+          color: #6c6c6c;
+        }
+          .features li a:hover img{
+            opacity: 0.7;
+          }
+
+        .features li a img {
+          display: block;
+          margin: 0 auto 20px;
+          width: 30%;
+        }
+          .features li a > div h2 {
+            text-align: center;
+            font-size: 28px;
+            padding:0;
+          }
+          .features li a > div p {
+            font-size: 12px;
+          }
+
+
+  .feature {
+    margin: 30px 0;
+  }
+    .feature-left {
+      max-width: 400px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
+      .feature-left .btn {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+      }
+    .feature-right {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
 
 footer {
@@ -757,7 +787,146 @@ iframe {
 
 .video {
 
-  width:500px;
+  max-width:500px;
   margin:0 auto;
 }
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 450px) {
+
+
+  
+      .flexslider li h2 {
+        font-size: 36px;
+      }
+      .flexslider li p {
+        font-size: 21px;
+      }
+
+    .photobanner {
+      width:35%;}  
+}
+
+@media only screen and (min-width: 600px) {
+  .features li {
+    float: left;
+    width: 33.333333%;
+  }
+    .features li a img {
+      width: 60%;
+    }
+  .feature-left {
+    max-width: none;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 60px 20px 0;
+  }
+  .feature-right {
+    max-width: none;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+  }
+    .feature-right img {
+      margin-top: 100px;
+    }
+  .flexslider {
+    height: 330px;
+  }
+
+      .flexslider li h2 {
+        font-size: 38px;
+      }
+      .flexslider li p {
+        font-size: 23px;
+      }
+
+      .photobanner {
+      width:40%;}     
+
+}
+
+
+  
+@media only screen and (min-width: 767px) {
+
+  .flexslider {
+    height: 400px;
+  }
+ 
+      .flexslider li h2 {
+        font-size: 42px;
+      }
+      .flexslider li p {
+        font-size: 24px;
+      }
+}
+
+@media only screen and (min-width: 850px) {
+  .feature-right img {
+    margin-top: 40px;
+  }
+  .flexslider {
+    height: 500px;
+  }
+    .flexslider li {
+      padding: 140px 0 0 0;
+    }
+      .flexslider li h2 {
+        font-size: 50px;
+      }
+      .flexslider li p {
+        font-size: 28px;
+      }
+}
+
+@media only screen and (min-width: 900px) {
+  .feature-right img {
+    margin-top: 0;
+    }
+
+  .logo {
+    float: left;  
+
+    margin: 20px 40px 20px 15px;
+
+      }
+
+  nav {
+    float:left;
+    margin-top: 50px;
+    line-height: inherit;
+    width: 600px
+
+    }
+
+  nav ul {
+    margin-left: 62px;
+
+  }
+
+   nav ul ul li {
+    line-height: 1.0em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
