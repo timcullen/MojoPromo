@@ -20,13 +20,13 @@ $(".explore").on(
         var $this=$(this);
         $(".explore").next.removeClass('show');
     }
+
+
+
 });
 
 
-// 	function(){
-// 	console.log($(this));
-
-// })
+$("#video").fitVids();
 
 
 

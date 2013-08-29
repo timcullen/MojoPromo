@@ -26,7 +26,7 @@ p {
 label[for="shownav"], .menu, input#shownav {
     position: absolute;
     top: 37%;
-    right: 5%;
+    right: 11%;
     padding: 0;
     margin: 0;             
 } 
@@ -431,13 +431,13 @@ input:checked ~ .menu li:nth-child(6) a {
     -o-transition-delay: 0, .2s, .2s;
     -ms-transition-delay: 0, .2s, .2s;
     transition-delay: 0, .2s, .2s;
-}
+    }
 
 .menu li:nth-child(7) a:hover {
 
   background-image: url("../images/ap_icons_black_social.png");
   background-position: -304px -104px;
-}
+    }
 
 input:checked ~ .menu li:nth-child(7) a {
     top: 6.467156728em;
@@ -454,4 +454,13 @@ input:checked ~ .menu li:nth-child(7) a {
     -o-transition-delay: .2s, .2s, .1s;
     -ms-transition-delay: .2s, .2s, .1s;
     transition-delay: .2s, .2s, .1s;
-} 
+    } 
+
+@media only screen and (min-width: 900px) {
+
+label[for="shownav"], .menu, input#shownav {
+  
+    right: 5%;
+}
+
+}
