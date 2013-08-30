@@ -57,10 +57,10 @@ overflow: hidden;
 .logo {
 
 width: 112px;
-height: 137px;
+height: 120px;
 background: url('../images/mojologo.svg');
 background-size: cover;
-margin: 20px auto;
+margin: 36px auto;
 
 }
 
@@ -461,13 +461,13 @@ width:100%;
 
 
 #blurb  {
-width:56%;
+width:46%;
 margin:0 auto;
 border-top: 1px solid #000000;
 border-right: 1px solid #ffffff;
 border-bottom: 1px solid #ffffff;
 border-left: 1px solid #000000;
-padding-bottom: 20px;
+
 
 
 }
@@ -612,9 +612,9 @@ iframe {
 
 .video {
 
-  max-width:500px;
+  width:100%;
   margin:0 auto;
-  padding-top: 20px;
+  padding: 6px;
 }
 
 
@@ -745,6 +745,12 @@ iframe {
     margin: 20px 40px 20px 15px;
 
       }
+
+  .video {
+
+
+  padding: 20px;
+}
 
   nav {
     float:left;
