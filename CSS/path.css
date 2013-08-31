@@ -73,6 +73,7 @@ label[for="shownav"] {
     background: linear-gradient(top, #ACACAC 0%, #363636 100%);  
     background: -moz-linear-gradient(top, #ACACAC 0%, #363636 100%); 
     background: -webkit-linear-gradient(top, #ACACAC 0%, #363636 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ACACAC', endColorstr='#363636');
        
 }
 label[for="shownav"]:before {
