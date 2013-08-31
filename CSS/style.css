@@ -368,6 +368,8 @@ display:none;
     #b8b8b8 25%,
     #6b6b6b 75%,
     #424242);
+  background-image: -ms-linear-gradient(top, #F0F0F0 0%, #424242 100%);
+
   background: -webkit-gradient(
     linear, left top, left bottom, 
     from(#f0f0f0),
@@ -487,7 +489,7 @@ border-left: 1px solid #000000;
 
 
 .features {
-    max-width: 1320;
+    max-width: 1320px;
     overflow: hidden;
     margin:0 auto;
   }
@@ -733,7 +735,7 @@ iframe {
       }
 }
 
-@media only screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .feature-right img {
     margin-top: 0;
     }
