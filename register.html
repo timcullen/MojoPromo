@@ -130,6 +130,16 @@
 					<input type="email" id="user_email" name="user_email" placeholder="Enter email address">
 					<span id="user_email_error">Email must be valid!</span>
 					<br>
+					<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LfS1-YSAAAAABQff6REfhG6DS-GVE4syknBmDXp"></script>
+					<noscript>
+				       <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfS1-YSAAAAABQff6REfhG6DS-GVE4syknBmDXp"
+				           height="300" width="500" frameborder="0"></iframe><br>
+				       <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+				       </textarea>
+				       <input type="hidden" name="recaptcha_response_field"
+				           value="manual_challenge">
+				    </noscript>
+
 					<input type="submit" value="Register">
 				</form><!-- #add_user_data -->
 
@@ -164,8 +174,8 @@
 			</div><!-- container div -->
 
 		</div><!-- wrapper div -->
-		<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-		<script type="text/javascript" src="js/captcha.js"></script>
+<!-- 		// <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LfS1-YSAAAAABQff6REfhG6DS-GVE4syknBmDXp"></script> -->
+<!-- 		// <script type="text/javascript" src="js/captcha.js"></script> -->
 		<script src="js/userdata.js"></script>
 	</body>
 </html>
