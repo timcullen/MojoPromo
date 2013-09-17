@@ -68,12 +68,10 @@ label[for="shownav"] {
     font-size: 2.4em;
     cursor: pointer; 
     pointer-events: none;     
-                
-
     background: linear-gradient(top, #ACACAC 0%, #363636 100%);  
     background: -moz-linear-gradient(top, #ACACAC 0%, #363636 100%); 
     background: -webkit-linear-gradient(top, #ACACAC 0%, #363636 100%); 
-    background: -ms-linear-gradient(top #ACACAC 0%, #363636 100%);
+    background-image: -ms-linear-gradient(rgb(172, 172, 172) 0%, rgb(54, 54, 54) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ACACAC', endColorstr='#363636');
        
 }
