@@ -605,6 +605,36 @@ iframe {
 }
 
 
+.large {
+
+  display:none;
+
+}
+
+h2.large {
+
+  margin: 0 auto; 
+  width:650px;
+  font-size:40px;
+}
+
+.small {
+
+  display:block;
+
+
+}
+
+h2.small {
+
+  margin: 0 auto; 
+  width:60%;
+  font-size:20px;
+  text-align: center;
+  padding-left: 0px;
+}
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -646,6 +676,8 @@ iframe {
   .photobanner {
     width:35%;
   }  
+
+
 
 }
 
@@ -689,6 +721,24 @@ iframe {
       .flexslider li p {
         font-size: 24px;
       }
+
+  .small {
+    display:none;
+  }
+
+
+  .large {
+
+    display:block;
+
+  }
+
+
+
+  nav {
+
+    width:80%;
+  }
 }
 
 @media only screen and (min-width: 850px) {
@@ -744,7 +794,7 @@ iframe {
 
   .centre {
     margin:0 auto;
-    width:600px;
+    width:700px;
   }
 
 }
